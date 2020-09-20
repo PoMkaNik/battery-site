@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Адаптивные алгоритмы зарядки свинцовых аккумуляторов | Алгоритм зарядки свинцовых аккумуляторов</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Font Awesome JS -->
+  <script src="js/all.min.js"></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/text-animation.css">
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="navigation-standalone navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand" href="index.html"><img id="logo" src="img/logo_1_200x200.png" alt=""></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Продукция
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="product-1.html">Версия-7-Профи</a>
+              <a class="dropdown-item" href="#">Версия-6-ТОР</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">МикроЗУ-Про</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item highlight" href="#">Инструкция</a>
+              <a class="dropdown-item highlight" href="repair.html">Ремонт</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="delivery.html">Доставка</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Технические вопросы зарядa
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="articles/istoriya.html">История исследований</a>
+              <a class="dropdown-item" href="#">Восстановление АКБ</a>
+              <a class="dropdown-item" href="#">Методики обслуживания АКБ</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Расчет напряжения АКБ методом третьего электрода</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">F.A.Q.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- MAIN -->
+  <main>
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container-lg">
+        <h2>Терминологя</h2>
+        <h6>(последние изменения от 08 сентября 2020 года)</h6>
+        <div>
+          <p><strong>Аккумуляторная батарея</strong> - один из основных элементов электрооборудования автомобиля,
+            поскольку она накапливает и хранит электроэнергию, обеспечивает запуск двигателя в различных климатических
+            условиях, а также питает электроприборы при неработающем двигателе.Автомобильные свинцово-кислотные
+            12-вольтовые АКБ состоят из 6-ти последовательно соединенных элементов (банок), объединенных в общий корпус.
+            Из каждой банки осуществляется газоотвод, конструкции могут существенно отличаться.
+          </p>
+          <p><strong>Электролит</strong> представляет собой раствор серной кислоты в дистиллированной воде (для средней
+            полосы России плотностью 1.27-1.28 г/см3 при t=+20°С). Кипение электролита - бурное выделение газа при
+            электролитическом разложении воды с выделением кислорода и водорода. Это происходит во время заряда батареи.
+          </p>
+          <p><strong>Саморазряд</strong> - самопроизвольное снижение ёмкости АКБ при бездействии. Скорость саморазряда
+            зависит от материала пластин, химических примесей в электролите, его плотности, от чистоты верхней части
+            корпуса батареи и продолжительности ее эксплуатации.
+          </p>
+          <p><strong>Напряжение полностью заряженной аккумуляторной батареи без нагрузки</strong> (ЭДС -
+            электродвижущая сила) должно находиться в пределах 12.6-12.9 В. Напряжение в бортовой сети автомобиля при
+            работающем двигателе несколько выше, чем на клеммах АКБ, и должно находиться в пределах 13,8-14,8 В (0,2 В
+            от крайних значений). Значение напряжения ниже 13.8 В ведет к недозаряду батареи, а выше 14.4В - к
+            перезаряду, что пагубно сказывается на ее сроке службы.
+          </p>
+          <p><strong>Полярность аккумуляторной батареи</strong> - термин, определяющий расположение токосъемных выводов
+            на ее корпусе. На зарубежных батареях полярность может быть прямой или обратной, т. е. ориентировка
+            положительного и отрицательного выводов относительно корпуса может быть различной. По российскому стандарту
+            (если смотреть со стороны выводов) отрицательный (-) должен располагаться справа, положительный (+) слева.
+          </p>
+          <p><strong>Ёмкость батареи</strong> - способность батареи принимать и отдавать энергию - измеряется в
+            ампер-часах (Ач). Для оценки ёмкости батареи принята методика 20-ти часового разряда током 0.05С20 (т.е.
+            током, равным 5% от номинальной ёмкости). Т.е., если ёмкость батареи 55Ач, то разряжая ее током 2.75 А, она
+            полностью разрядится за 20 часов. Аналогично для батарей ёмкостью 60Ач полный 20-ти часовой разряд
+            произойдет при чуть большем токе разряда - 3А. Данная характеристика определяет возможность питать
+            потребителей в экстремальной ситуации (при отказе генератора). Характеризуется объемом активной массы.
+          </p>
+          <p><strong>Значение тока холодного старта при -18°С (по DIN)</strong> - Величина тока, которую батарея
+            способна отдать при пуске двигателя при температуре -18°С. Наиболее важная характеристика, напрямую
+            сказывающаяся на пуске двигателя. Ведь при -20°С ток, потребляемый стартером, составляет порядка 300А. (Для
+            пуска в летнее время горячего двигателя этот же показатель равен 100-120А.) Значение стартового тока
+            определяется конструкцией батареи, пластин, сепараторов. Чем ниже внутреннее сопротивление батареи, тем выше
+            стартовый ток, тем надежнее пуск двигателя при низких температурах.
+          </p>
+          <p><strong>Резервная ёмкость</strong> - время, в течении которого батарея сможет обеспечить работу
+            потребителей в аварийном режиме. Величина резервной ёмкости, выраженная в минутах, последнее время все чаще
+            проставляется изготовителями батарей после значения тока холодного старта.
+          </p>
+          <p><strong>Необслуживаемые батареи.</strong> Сразу следует оговориться, что этот термин не должен пониматься
+            буквально и восприниматься как руководство к бездействию. Это название говорит об улучшенных потребительских
+            свойствах батареи. Необслуживаемые АКБ требуют долива воды не чаще одного раза в год при условии
+            использования их на автомобилях с исправным электрооборудованием и среднегодовым пробегом 15-20 тыс. км.
+            Встречаются конструкции, исключающие всякое вмешательство на всем протяжении срока службы, но они особенно
+            критичны к состоянию автомобильного электрооборудования.
+            <br>Корпус современных АКБ изготавливается из пластмассы, в большинстве случаев полупрозрачной, позволяющей
+            контролировать уровень электролита.
+            <br>Большинство необслуживаемых батарей выпускаются заводами-изготовителями, залитыми электролитом. Так как
+            эти батареи имеют значительно меньший саморазряд, они могут храниться от 6 месяцев до 1 года без подзаряда.
+            Саморазряд новых необслуживаемых батарей за 12 месяцев может составить до 50% от номинальной ёмкости.
+          </p>
+          <p><strong>Обслуживание АКБ в процессе эксплуатации</strong> сводится к проверке и приведению в соответствие
+            с требованиями: уровня и плотности электролита; чистоты и надежности крепления электрических соединений
+            батареи с корпусом автомобиля, параметров электрооборудования, крепления батареи. Необходимо также следить
+            за правильным натяжением ремня генератора, очищать и смазывать выводы и клеммы, содержать батарею в чистоте.
+            Протирайте верхнюю поверхность водным раствором питьевой соды. Доведение плотности электролита до требуемой
+            производится путем заряда батареи от стационарного зарядного устройства. (<noindex><a rel="nofollow"
+                href="http://adopt-zu.soroka.org.ua/ver3TOP.html" target="_blank">ЗУ представлены в разделе
+                "Продукция"</a></noindex> )
+            <br>Вот так кипит аккумулятор от "классики заряда": <a rel="nofollow" href="http://youtu.be/AkgpzU2g37E"
+              target="_blank">http://youtu.be/AkgpzU2g37E </a>
+          </p>
+        </div>
+
+        <div>
+          <h2 id="top">Ответы на вопросы</h2>
+          <div class="faq-list">
+            <ol>
+              <li><a href="#question-1">Как можно открыть крышку аккумулятора? АКБ варта блю динамик, как добавить воды?
+                  Не открывается
+                  верхняя крышка, или он не обслуживаемый?</a></li>
+              <li><a href="#question-2">lorem-ipsum-2</a></li>
+              <li><a href="#question-3">lorem-ipsum-3</a></li>
+              <li><a href="#question-4">lorem-ipsum-4</a></li>
+              <li><a href="#question-5">lorem-ipsum-5</a></li>
+              <li><a href="#question-6">lorem-ipsum-6</a></li>
+              <li><a href="#question-7">Ещё мне остался неясен вопрос о том, почему режим STD формирует преимущественно
+                  бета-модификацию оксида свинца при токе заряда 0,1С.....</a></li>
+              <li><a href="#question-8">lorem-ipsum-8</a></li>
+              <li><a href="#question-9">lorem-ipsum-9</a></li>
+              <li><a href="#question-10">lorem-ipsum-10</a></li>
+
+            </ol>
+          </div>
+          <div class="question" id="question-1">
+            <h6>1. Как можно открыть крышку аккумулятора? АКБ варта блю динамик, как добавить воды? Не
+              открывается верхняя крышка, или он не обслуживаемый?</h6>
+            <p>Varta и практически все остальные производители сейчас выпускают необслуживаемые аккумуляторы, крышка у
+              них посажена на герметик, открыть то ее можно, но не нужно так как будет недействительная гарантия и потом
+              будет проблематично посадить ее на место.</p>
+            <img src="http://adopt-zu.soroka.org.ua/images/akkumul.gif" alt="">
+            <img src="http://adopt-zu.soroka.org.ua/images/acb_1.jpg" alt="">
+            <img src="http://adopt-zu.soroka.org.ua/images/acb_2.jpg" alt="">
+            <img src="http://adopt-zu.soroka.org.ua/images/sv_acb_22.jpg" alt="">
+            <p><a href="#top">К списку вопросов</a></p>
+          </div>
+          <div class="question" id="question-2">
+            <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p><a href="#top">К списку вопросов</a></p>
+          </div>
+          <div class="question" id="question-3">
+            <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p><a href="#top">К списку вопросов</a></p>
+          </div>
+          <div class="question" id="question-4">
+            <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p><a href="#top">К списку вопросов</a></p>
+          </div>
+          <div class="question" id="question-5">
+            <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p><a href="#top">К списку вопросов</a></p>
+          </div>
+          <div class="question" id="question-6">
+            <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p><a href="#top">К списку вопросов</a></p>
+          </div>
+          <div class="question" id="question-7">
+            <h6>7. Ещё мне остался неясен вопрос о том, почему режим STD формирует преимущественно бета-модификацию
+              оксида свинца при токе заряда 0,1С.....</h6>
+            <p>Вопрос ваш не так прост как кажется.
+              <br><strong>Альфа модификация </strong>- получается (обобщая если) при зарядке "а-ля гальваника", т.е.
+              малые токи + отсутствие пауз на перемешивание. "Классические кипятильники" делают еще огромную бяку - они
+              к концу заряда снижают ток, тем самым запечатывая альфа-слоем глубинные слои намазки. :( это вместе с
+              непрерывностью заряда малыми токами приводит к "бифштексу с кровью", который потом "отматывать" приходится
+              долго и нудно.
+              <br><strong>Бета - это режим "АУТО"(заряд с прерыванием тока) на все время заряда,</strong> там более
+              жестко идет обращение с током заряда, но так как мои ЗУ народ обычно для лечения полу-трупов :)
+              использует, то компромисс найден - STD стал "прерывистым", что позволило "скрестить ужа и ежа", и сделать
+              процесс заряда более эффективным.
+              <br>"АУТО" просто не даст больному АКБ большой ток - а STD даст тот ток что выставлен пользователем,
+              поэтому и лечебный эффект будет выше, особенно в "добивке". Но начиная с ЗУ "Версия4(ТОР)" всеми
+              "лечебными" свойствами обладает уже режим STD, куда я внес все необходимые новшества, так что если вы
+              пользуетесь ЗУ Версия4(ТОР) то просто выставьте режим STANDART(STD) и ёмкость вашего АКБ, который вы
+              собираетесь заряжать-лечить. Напоминаю, что АКБ надо раскачивать сначала а не сразу выставлять на ЗУ
+              максимальные токи. Как именно? - смотрите в разделе <a rel="nofollow"
+                href="http://adopt-zu.soroka.org.ua/vosst.html" target="_blank"> "Восстановление". </a></p>
+            <p><a href="#top">К списку вопросов</a></p>
+          </div>
+          <div class="question" id="question-8">
+            <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p><a href="#top">К списку вопросов</a></p>
+          </div>
+          <div class="question" id="question-9">
+            <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p><a href="#top">К списку вопросов</a></p>
+          </div>
+          <div class="question" id="question-10">
+            <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam natus cumque praesentium maxime quod
+              porro cum doloribus, deleniti ab deserunt labore corrupti soluta nesciunt quam adipisci hic molestias eum
+              tempore dicta. Placeat optio quod delectus harum debitis, cum aliquam nam aut nisi. Dignissimos hic nisi
+              aut. Qui necessitatibus nemo impedit.</p>
+            <p><a href="#top">К списку вопросов</a></p>
+          </div>
+        </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container-md">
+        <h2>Напишите <span>нам</span></h2>
+        <form action="" id="contactForm">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" placeholder="Имя" class="form-control" id="name" />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Email" class="form-control" id="email" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <textarea class="form-control" id="message" name="message" placeholder="Ваше сообщение"></textarea>
+                <button type="submit" class="btn btn-block pt-1 contact">
+                  ОТПРАВИТЬ
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="text-center">
+    Copyright © 2009 --- Alex Soroka. All Rights Reserved.
+  </footer>
+  <!-- JS SCRIPTS -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
