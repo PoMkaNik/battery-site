@@ -44,6 +44,12 @@ a:hover {
   color: #0573bb;
 }
 
+#contact-warning {
+  font-size: 0.7em;
+  text-align: justify;
+  padding: 0.5em;
+}
+
 /* NAVIGATION */
 nav {
   width: 100%;
